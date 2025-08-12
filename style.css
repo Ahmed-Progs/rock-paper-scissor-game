@@ -1,0 +1,253 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    background-color: #EFB11E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-right button {
+    background-color: black;
+    color: #EFB11E;
+    font-family: 'Luckiest Guy', cursive;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    }
+
+.nav-left button:hover {
+    background-color: #222;
+}
+
+.nav-left {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.nav-left img {
+    height: 50px;
+    width: auto;
+}
+
+body {
+    padding-top: 70px;
+}
+
+body {
+    border: 10px #EFB11E solid;
+    background-color: black;
+    font-family: 'Luckiest Guy', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #EFB11E;
+}
+
+.welcomePage {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.gameArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background-color: #EFB11E;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90%;
+    gap: 15px;
+}
+
+.gameArea video {
+    width: 40%;
+    border-radius: 10px;
+    background-color: rgb(235, 235, 235);
+}
+
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 50px;
+}
+
+.buttons button {
+    background: none;
+    background-color: #EFB11E;
+    cursor: pointer;
+    width: 10rem;
+    border: none;
+    border-radius: 10px;
+}
+
+.buttons img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.2s;
+}
+
+.buttons img:hover {
+    transform: scale(1.1);
+}
+
+.line {
+    background-color: #EFB11E;
+    width: 100%;
+    height: 10px;
+}
+
+.lab {
+    color: #EFB11E;
+}
+
+.but {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.but img {
+    width: 50%;
+}
+
+.foot {
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.footbuttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.foothead {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foothead h1 {
+    color: #EFB11E;
+}
+
+.circbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    background-color: #EFB11E;
+}
+.gamevs {
+    height: 500px;
+}
+
+           /* RESPONSIVE */
+
+@media (max-width: 1024px) {
+    .gameArea {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .gameArea video {
+        width: 45%;
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+
+    .header h1 {
+        font-size: 1.6rem;
+    }
+
+    .gameArea {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .gameArea video {
+        width: 90%;
+    }
+
+    .buttons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .buttons button {
+        width: 8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        border-width: 5px;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .buttons button {
+        width: 7rem;
+    }
+
+    .buttons img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .but {
+        width: 80%;
+    }
+
+    .but img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .gamevs {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gamevs {
+        height: 150px;
+    }
+}

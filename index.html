@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper And Scissor Game</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Press+Start+2P&family=Luckiest+Guy&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="./assets/rock.png" alt="Rock">
+                <img src="./assets/paper.png" alt="Paper">
+                <img src="./assets/scissor.png" alt="Scissor">
+            </div>
+            <div class="nav-right">
+                <button id="letsPlayBtn">Let's Play</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="welcomePage">
+            <img src="./assets/WelcomePage.png" alt="Welcome Page" height="650px" width="80%">
+        </div>
+
+        <div class="line"></div>
+
+        <div class="header">
+            <h1>Welcome To Rock, Paper & Scissor Game!</h1>
+            <p>Note: This game is based on a real random generator.</p>
+        </div>
+
+        <div class="gameArea">
+            <video src="./assets/videos/LDefault.mp4" id="leftVideo" height="450px" max-width="100px" autoplay loop
+                muted></video>
+            <img class="gamevs" src="./assets/vs.png" alt="versus">
+            <video src="./assets/videos/RDefault.mp4" id="rightVideo" height="450px" max-width="100px" autoplay loop
+                muted></video>
+        </div>
+
+        <div class="buttons">
+            <div class="but">
+                <button id="rock" onclick="playChoice('rock')"><img src="./assets/rock.png" alt="Rock"
+                        height="100px"></button>
+                <label class="lab" for="rock">Rock</label>
+            </div>
+
+            <div class="but">
+                <button id="paper" onclick="playChoice('paper')"><img src="./assets/paper.png" alt="Paper"
+                        height="100px"></button>
+                <label class="lab" for="paper">Paper</label>
+            </div>
+
+            <div class="but">
+                <button id="scissor" onclick="playChoice('scissor')"><img src="./assets/scissor.png" alt="Scissor"
+                        height="100px"></button>
+                <label class="lab" for="scissor">Scissor</label>
+            </div>
+        </div>
+
+        <div class="line"></div>
+    </main>
+
+    <footer>
+        <div class="foot">
+            <div class="foothead">
+                <h1>Contact us!</h1>
+            </div>
+            <div class="footbuttons">
+                <div class="circbuttons">
+                    <a href="https://www.facebook.com" target="_blank"><img src="./assets/facebook.png" alt="Facebook"
+                            height="80px"></a>
+                </div>
+                <div class="circbuttons">
+                    <a href="https://www.linkedin.com/in/ahmed-raza-130336355" target="_blank"><img
+                            src="./assets/linkedin.svg" alt="Linkedin" height="40px"></a>
+                </div>
+                <div class="circbuttons">
+                    <a href="https://github.com/Ahmed-Progs?tab=repositories" target="_blank"><img
+                            src="./assets/github.svg" alt="Github" height="40px"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
